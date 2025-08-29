@@ -1,26 +1,17 @@
-/** Importando uma fonte especifica do google fonts **/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/** e a pagina inteiro, é uma camada acima do body*/
 * {
     margin: 0;
     padding: 0;
-    /** Com box-sizing: border-box, o navegador passa a incluir o conteúdo + padding + borda dentro do valor definido de largura e altura.
-        Isso facilita o controle do layout, porque o tamanho final do elemento não muda quando você adiciona bordas ou espaçamentos internos. **/
     box-sizing: border-box;
 }
 
 body {
-    /** Muda a cor do fundo da pagina **/
     background-color: #080808;
-    /** Usa a fonte importada do google fonts **/
-
-    /** Muda a expessura da fonte **/
     font-weight: 400;
 }
 
 header {
-    /** Usar a medida em rem (unidade de medida relativa), deixa a nossa pagima dinamica **/
     padding: 1rem;
     margin: 0 2rem 0 2rem;
     text-align: center;
@@ -33,7 +24,6 @@ header h1 {
 }
 
 .nav-item .nav-link {
-    /** Muda a cor das letras **/
     color: #9c9c9c !important;
 }
 
@@ -56,24 +46,23 @@ p {
 }
 
 .projeto img {
-    width: 500px;   /* largura fixa */
-    height: 300px;  /* altura fixa */
-    object-fit: cover; /* corta a imagem para caber sem distorcer */
-    border-radius: 8px; /* opcional: deixa cantos arredondados */
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 #projetos{
     background-color: #ffffff;
 }
 
-/* Seção Tecnologias */
 #tecnologias {
-    background-color: #0d0d0d; /* fundo escuro */
+    background-color: #0d0d0d;
 }
 
 .card-tecnologia {
-    background-color: transparent; /* fundo do card transparente */
-    border: 1px solid #333; /* borda suave */
+    background-color: transparent;
+    border: 1px solid #333;
     border-radius: 10px;
     text-align: left;
     position: relative;
@@ -82,7 +71,7 @@ p {
 }
 
 .card-tecnologia:hover {
-    border-color: #00ff88; /* destaque no hover */
+    border-color: #00ff88;
     transform: translateY(-5px);
 }
 
@@ -97,7 +86,7 @@ p {
 }
 
 .card-tecnologia p {
-    margin-top: 30px; /* espaço para as aspas */
+    margin-top: 30px;
     font-size: 0.95rem;
 }
 
@@ -105,7 +94,6 @@ p {
     color: #fff;
 }
 
-/* Seção Projetos */
 #projetos {
     background-color: #fff;
 }
@@ -121,7 +109,6 @@ p {
     line-height: 1.6;
 }
 
-/* Cards dos projetos */
 .projeto img {
     max-width: 100%;
     border-radius: 12px;
@@ -132,7 +119,6 @@ p {
     transform: scale(1.03);
 }
 
-/* Botões customizados */
 #projetos .btn {
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -143,7 +129,6 @@ p {
     transform: translateY(-3px);
 }
 
-/* Badges */
 #projetos .badge {
     font-size: 0.85rem;
     padding: 6px 12px;
@@ -154,7 +139,6 @@ p {
     background-color: #fff;
 }
 
-/* Seção Experiências */
 #experiencias h2 {
     font-size: 2.2rem;
 }
@@ -166,7 +150,6 @@ p {
     font-size: 1rem;
 }
 
-/* Card de experiência */
 .service-card {
     max-width: 950px;
     background: #fff;
@@ -183,7 +166,6 @@ p {
     border-radius: 10px;
 }
 
-/* Botões de navegação */
 .btn-nav {
     background: #f5f5f5;
     border: none;
@@ -199,7 +181,6 @@ p {
     background: #ddd;
 }
 
-/* Seção de Contatos */
 .contact-section {
     background: #000;
     color: #fff;
@@ -221,7 +202,6 @@ p {
     line-height: 1.6;
 }
 
-/* Formulário */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
@@ -249,7 +229,6 @@ p {
     resize: none;
 }
 
-/* Botão */
 .contact-form button {
     background: #3F8E00;
     color: #fff;
@@ -271,7 +250,6 @@ p {
     background: #36a300;
 }
 
-/* Rodapé */
 .footer {
     background: #1B1B1B;
     color: #aaa;
