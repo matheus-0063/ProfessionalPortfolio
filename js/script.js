@@ -34,3 +34,15 @@ document.getElementById("service-previous").addEventListener("click", function (
     div_Atual = (div_Atual - 1 + our_services.length) % our_services.length;
     atualizarServico();
 });
+
+function sendMail(){
+    const templateParams = {
+        email: document.getElementById("email").value,
+        mobile: document.getElementById("mobile").value,
+        message: document.getElementById("message").value,
+    };
+
+    emailjs
+        .send("service_3kmldjy", "template_1l4y0o8", templateParams)
+        .then(() => alert("Email sent successfully.").catch(() => alert("Email not sent.")));
+}
