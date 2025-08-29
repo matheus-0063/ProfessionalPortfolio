@@ -38,3 +38,7 @@ Este projeto tem como objetivo desenvolver um portfólio profissional, solicitad
 - **Git & GitHub** → Controle de versão e hospedagem do código.  
 - **GitHub Pages** → Deploy do site em ambiente online.  
 
+---
+
+![GifPortfolioI](https://github.com/user-attachments/assets/c181e0e2-bf54-4192-8d73-a61b4ca63f56)
+
