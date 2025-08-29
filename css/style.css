@@ -1,0 +1,285 @@
+/** Importando uma fonte especifica do google fonts **/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/** e a pagina inteiro, é uma camada acima do body*/
+* {
+    margin: 0;
+    padding: 0;
+    /** Com box-sizing: border-box, o navegador passa a incluir o conteúdo + padding + borda dentro do valor definido de largura e altura.
+        Isso facilita o controle do layout, porque o tamanho final do elemento não muda quando você adiciona bordas ou espaçamentos internos. **/
+    box-sizing: border-box;
+}
+
+body {
+    /** Muda a cor do fundo da pagina **/
+    background-color: #080808;
+    /** Usa a fonte importada do google fonts **/
+
+    /** Muda a expessura da fonte **/
+    font-weight: 400;
+}
+
+header {
+    /** Usar a medida em rem (unidade de medida relativa), deixa a nossa pagima dinamica **/
+    padding: 1rem;
+    margin: 0 2rem 0 2rem;
+    text-align: center;
+    background-color: #1b1b1b;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+header h1 {
+    font-family: "Raleway", sans-serif;
+}
+
+.nav-item .nav-link {
+    /** Muda a cor das letras **/
+    color: #9c9c9c !important;
+}
+
+#bt-green{
+    background-color: #3F8E00;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#bt-green:hover{
+    transform: scale(1.01);
+}
+
+p {
+    font-family: "IBM Plex Mono", monospace;
+    color: #9c9c9c !important;
+}
+
+.nome{
+    color: #ffffff;
+}
+
+.projeto img {
+    width: 500px;   /* largura fixa */
+    height: 300px;  /* altura fixa */
+    object-fit: cover; /* corta a imagem para caber sem distorcer */
+    border-radius: 8px; /* opcional: deixa cantos arredondados */
+}
+
+#projetos{
+    background-color: #ffffff;
+}
+
+/* Seção Tecnologias */
+#tecnologias {
+    background-color: #0d0d0d; /* fundo escuro */
+}
+
+.card-tecnologia {
+    background-color: transparent; /* fundo do card transparente */
+    border: 1px solid #333; /* borda suave */
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    color: #d1d1d1;
+    transition: all 0.3s ease;
+}
+
+.card-tecnologia:hover {
+    border-color: #00ff88; /* destaque no hover */
+    transform: translateY(-5px);
+}
+
+.card-tecnologia .aspas {
+    font-size: 3rem;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.card-tecnologia p {
+    margin-top: 30px; /* espaço para as aspas */
+    font-size: 0.95rem;
+}
+
+.card-tecnologia h5 {
+    color: #fff;
+}
+
+/* Seção Projetos */
+#projetos {
+    background-color: #fff;
+}
+
+#projetos h2 {
+    font-size: 2.2rem;
+}
+
+#projetos p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Cards dos projetos */
+.projeto img {
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.projeto img:hover {
+    transform: scale(1.03);
+}
+
+/* Botões customizados */
+#projetos .btn {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#projetos .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+/* Badges */
+#projetos .badge {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+#experiencias {
+    background-color: #fff;
+}
+
+/* Seção Experiências */
+#experiencias h2 {
+    font-size: 2.2rem;
+}
+
+#experiencias p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Card de experiência */
+.service-card {
+    max-width: 950px;
+    background: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Botões de navegação */
+.btn-nav {
+    background: #f5f5f5;
+    border: none;
+    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-nav:hover {
+    background: #ddd;
+}
+
+/* Seção de Contatos */
+.contact-section {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* Formulário */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+/* Botão */
+.contact-form button {
+    background: #3F8E00;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 15px rgba(63, 142, 0, 0.5);
+}
+
+.contact-form button span {
+    margin-left: 8px;
+}
+
+.contact-form button:hover {
+    background: #36a300;
+}
+
+/* Rodapé */
+.footer {
+    background: #1B1B1B;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
